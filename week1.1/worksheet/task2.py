@@ -20,7 +20,11 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 
 # Ask the user to input an amount they want to save every month - this should be an integer.
 # Validate that they have entered an integer.
-savings_amount = 0.5
+
+# Sets savings initially as a string to begin the loop
+savings_amount = "temp"
+
+# Repeats until an appropriate value is entered
 while type(savings_amount) != int or savings_amount < 0 :
     savings_amount = input("How much do you want to save each month?")
 
