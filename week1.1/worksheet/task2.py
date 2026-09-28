@@ -9,7 +9,7 @@ def is_interager (value) :
     # Attemps to cast the functions input to interager and returns false if an error occurs
     try :
         value = int(value)
-    except ValueError:
+    except :
          return False
     
     return value
