@@ -34,7 +34,7 @@ while type(savings_amount) != int or savings_amount < 0 :
         savings_amount = False
 
     if savings_amount == False :
-        print("*** Warning: Savings amount must be a positive whole number ***")
+        print("*** Invalid amount ***")
 
 
 # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
