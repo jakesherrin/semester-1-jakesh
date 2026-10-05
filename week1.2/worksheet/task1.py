@@ -8,9 +8,9 @@ grade_is_int = True
 try :
     grade_int = int(grade)
 except :
-    grade_is_int = False
+    sys.exit("Error: Grade must be an integer between 0 and 100")
 
-if grade_int < 0 or grade_int > 100 or grade_is_int == False:
+if grade_int < 0 or grade_int :
     sys.exit("Error: Grade must be an integer between 0 and 100")
 
 if grade_int < 40:

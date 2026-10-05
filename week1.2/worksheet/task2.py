@@ -20,14 +20,14 @@ if len(float_values) == 0:
 
 try :
     float_values_length = len(float_values)
-    print(f"The average is {sum(float_values) / float_values_length}")
-    print(f"The maxium is {max(float_values)}")
-    print(f"The minimum is {min(float_values)}")
+    print(f"Minimum = {min(float_values)}")
+    print(f"Maximum = {max(float_values)}")
+    print(f"Mean = {sum(float_values) / float_values_length}")
 
     # Finds the medium without branching by finding the midpoint value of the sorted and reversed sorted list
     midpoint = float_values_length // 2
     median = (sorted(float_values)[midpoint] + list(reversed(sorted(float_values)))[midpoint]) / 2
 
-    print(f"The median is {median}")
+    print(f"Median = {median}")
 except :
     sys.exit("Error: no numbers provided")
