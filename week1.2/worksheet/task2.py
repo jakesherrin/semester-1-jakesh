@@ -15,6 +15,9 @@ def read_numbers():
 
 float_values = read_numbers()
 
+if len(float_values) == 0:
+    sys.exit("Error: no numbers provided")
+
 try :
     float_values_length = len(float_values)
     print(f"The average is {sum(float_values) / float_values_length}")

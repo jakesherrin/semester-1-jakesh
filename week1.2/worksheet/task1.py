@@ -15,7 +15,7 @@ if grade_int < 0 or grade_int > 100 or grade_is_int == False:
 
 if grade_int < 40:
     grade_str = "Fail"
-elif grade_int < 58 :
+elif grade_int < 70 :
     grade_str = "Pass"
 else :
     grade_str = "Distinction"
