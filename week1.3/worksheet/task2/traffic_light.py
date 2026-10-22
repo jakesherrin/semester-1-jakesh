@@ -11,7 +11,24 @@ maxtime = int(input())  # read an integer number of steps (>0)
 
 state = "red"
 
-print(f"Time {systime:03} State {state}")
+colour_period = 0
+
+for steps in range (0, (maxtime + 1)) :
+    print(f"Time {systime:03} State {state}")
+
+    colour_period = colour_period + 1
+
+    if colour_period >= states.get(state) :
+        key_list = list(states.keys())
+
+        if key_list.index(state) + 1 < key_list.length() :
+            state = key_list[key_list.index(state) + 1]
+        else :
+            state = key_list[0]
+        colour_period = 0
+
+
+    systime = systime + 1
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 
