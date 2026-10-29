@@ -31,12 +31,5 @@ def currency_converter(amount, from_currency, to_currency):
     return amount_output
 
 # Submit only this file currency_converter.py with the completed function.
-amount = input("Enter the amount")
-from_currency = input("Enter the currency you want to convert from")
-to_currency = input("Enter the currency you want to convert to")
-
-converted_currency = currency_converter(amount, from_currency, to_currency)
-
-print(f"{round(converted_currency, 2)}")
 
 # Remove any additional code you may have added during development and testing.
