@@ -8,7 +8,7 @@ class Person:
     """
     def __init__(self, name, date_of_birth) :
         self.name = name
-        self.date_of_birth = date_of_birth
+        self.date_of_birth = date_of_birth.split("/")
     
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
@@ -20,8 +20,10 @@ class Person:
         name_split = self.name.split(" ")
         return ("".join([word[0] for word in name_split])).upper()
 
-    def is_birthday ()
+    def is_birthday (self) :
+        today_date = str(date.today()).split("-")
 
-guy = Person("James Brodrick Cuthbert William James", 10)
-
-print(guy.initials())
+        if today_date[1] + today_date[2] == self.date_of_birth[1] + self.date_of_birth[2] :
+           return True
+        else :
+            return False

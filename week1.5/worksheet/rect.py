@@ -19,15 +19,19 @@ class Rectangle:
 
     # Implement methods is_square(), area() & perimeter() here
     def is_square (self) :
+        """ Checks the width and height attribute and returns true if they're equal """
+
         if self.height == self.width :
             return True
         else :
             return False
 
     def area (self) :
+        """ Returns the width and height multiplied """
         return self.width * self.height
 
     def perimeter (self) :
+        """" Returns the sun of twice the width and height """
         return (2 * self.width) + (2 * self.height)
     
     # (See README.md for details of what they should do)
