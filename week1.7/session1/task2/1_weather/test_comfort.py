@@ -7,11 +7,17 @@
 
 from weather import comfort_level
 
+import pytest
+
 def test_cold():
-    assert comfort_level(    ) == "COLD"
-    assert comfort_level(    ) == "COLD"
+    assert comfort_level(15) == "COLD"
+    assert comfort_level(10) == "COLD"
 
 def test_hot():
-    assert comfort_level(    ) == "HOT"
-    assert comfort_level(    ) == "HOT"
-    
+    assert comfort_level(25) == "HOT"
+    assert comfort_level(30) == "HOT"
+
+def test_test () :
+    assert (0.1 + 0.2) == pytest.approx(0.3)
+
+test_test ()

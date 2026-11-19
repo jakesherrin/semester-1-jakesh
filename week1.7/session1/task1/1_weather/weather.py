@@ -13,3 +13,10 @@ def comfort_level(temperature):
         return "HOT"
     else:
         return "OK"
+
+def test () :
+    assert comfort_level(15.0) == "COLD"
+    assert comfort_level(20.0) == "OK"
+    assert comfort_level(25.0) == "HOT"
+
+test()

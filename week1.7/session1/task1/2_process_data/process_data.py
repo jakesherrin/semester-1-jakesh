@@ -2,6 +2,7 @@
 
 
 def process_data(data):
+
     """
     Processes a list of integers and returns the sum of all values.
     If the list is empty, it returns None.
@@ -16,3 +17,4 @@ def process_data(data):
         return None
 
     return sum(data)
+
