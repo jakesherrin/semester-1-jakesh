@@ -8,6 +8,15 @@
 
 
 def valid_char_in_string(popList, charSet):
+    if len(charSet) != 2 or isinstance(charSet, list) ==  False :
+        return False
+    
+    for string in popList :
+        for char in string :
+            if char in charSet == False :
+                return False
+
+    return True
     """
     This function takes two arguments popList and charSet, in which popList
     is a list of strings and charSet is a list of strings with a length of 1

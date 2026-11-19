@@ -41,3 +41,10 @@ class Point:
             return False
 
         return self.x == other.x and self.y == other.y
+
+
+point_one = Point(1,3)
+
+point_two = Point(1,4)
+
+print(point_one == point_two)

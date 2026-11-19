@@ -32,3 +32,10 @@ class Point:
         Returns distance of this Point from another Point.
         """
         return math.hypot(self.x - p.x, self.y - p.y)
+
+    def __len__ (self) :
+        return round(math.sqrt((self.x ** 2) + (self.y ** 2)))
+
+point_one = Point(1, 5)
+
+print(len(point_one))
